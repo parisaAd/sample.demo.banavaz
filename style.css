@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-main:#53B9D9;
+    --color-primary:#0E5D80;
+    --color-footer-mobile:#146183;
+    --color-footer-desk: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%);
+    --color-text:#fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    color: var(--color-text);
+    font-size:1.4rem;
+    line-height: 1.7; 
+    background-color: var(--color-main); 
+}
+
+h1,
+h2,
+h3{
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.container{
+     max-width: 1280px;
+}
+    
+@media screen and (min-width:768px) {
+    
+    body{
+        font-size:1.8rem;
+        line-height: 2;
+    }
+}
+
+/* Button */
+
+.btn{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0.2rem 2rem;
+    margin: 1rem 1.5rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.btn__dark{
+    background-color: var(--color-primary);
+    color:var(--color-main) ;
+}
+
+.btn__dark-mobile{
+    background-color: var(--color-primary);
+    color: #fff; 
+}
+
+.btn__white{
+    border: 2px solid #fff;
+    
+}
+
+.btn__light{
+    background-color: #5BB1CC;
+    color: #fff; 
+}
+
+.btn__primary-color{
+    background-color: #fff;
+    color: var(--color-primary);   
+    border: 2px solid var(--color-primary);
+}
+
+/* Header Section */
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+.nav__menu{
+    display: flex;
+    font-weight: 700;
+    font-size: 2.2rem;
+    align-items: center;
+}
+
+.nav__menu .logo{
+width: 60px;
+height: 60px;
+}
+
+
+.nav__menu .logo img{
+    width: 100%;
+}
+.nav__item{
+    margin-left: 7rem;
+}
+.nav__btn{
+    display: flex;
+}
+
+
+
