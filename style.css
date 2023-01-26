@@ -36,7 +36,12 @@ h3{
 .container{
      max-width: 1280px;
 }
-    
+
+.block{
+    padding: 3rem 2rem;
+}
+
+
 @media screen and (min-width:768px) {
     
     body{
@@ -67,6 +72,8 @@ h3{
 .btn__dark-mobile{
     background-color: var(--color-primary);
     color: #fff; 
+    height: 45px;
+    line-height: 40px;
 }
 
 .btn__white{
@@ -91,33 +98,94 @@ h3{
 .nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
 }
 
-.nav__menu{
+
+.nav .logo{
+    width: 60px;
+    height: 60px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav .logo img{
+    width: 100%;
+}
+
+.nav__menu{
+    display: none;
     font-weight: 700;
     font-size: 2.2rem;
     align-items: center;
 }
 
-.nav__menu .logo{
-width: 60px;
-height: 60px;
-}
-
-
-.nav__menu .logo img{
-    width: 100%;
-}
 .nav__item{
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
+
 .nav__btn{
-    display: flex;
+    display: none;
 }
+
+.nav__toggler{
+    cursor: pointer;
+    background-color: #fff;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+}
+
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: #292D32;
+    border-radius: 5px;
+    
+}
+
+.bar:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.nav__menu-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+@media screen and (min-width:768px) {
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav .nav__menu-mobile{
+        display: none;
+    }
+   
+    .nav__menu{
+        display: flex;
+    }
+
+    .nav__main .logo{
+        margin-left: 6rem;
+    }
+    .nav__btn{
+        display: flex;
+    }
+
+    .nav__main{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+}   
+
 
 /* new section */
 
