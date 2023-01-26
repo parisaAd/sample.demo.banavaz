@@ -306,3 +306,19 @@ h3{
         line-height: 4.8px;
     }
 }
+
+/* Products Section */
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.product__item{
+    padding: 1rem;
+}git 
