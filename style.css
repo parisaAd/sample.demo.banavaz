@@ -92,6 +92,17 @@ h3{
     border: 2px solid var(--color-primary);
 }
 
+.btn__home-phone{
+    background-color: #fff;
+    color: var(--color-main);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 44px;
+}
+
 /* Header Section */
 
 
@@ -187,7 +198,47 @@ h3{
 }   
 
 
-/* new section */
+/* Contetn Home-Phone */
+.home-phone{
+    display: flex;
+    flex-direction: column;
 
 
+}
 
+.home-phone img{
+    width: 75%;
+    margin-bottom: 5rem;
+    align-self: center;
+
+}
+
+.home-phone__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home-phone h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-phone p{
+    font-size: 1.8rem;
+    
+    line-height: 3.7rem;
+}
+
+.btn__home-phone{
+    margin: 3rem 0;
+}
+
+.btn__home-phone .btn__name {
+    font-size: 1.8rem ;
+    line-height: 27px;
+}
+
+
+@media screen and (min-width:768px) {
+}
