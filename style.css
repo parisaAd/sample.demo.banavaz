@@ -59,7 +59,7 @@ h3{
     outline: 0;
     border: 0;
     padding: 0.2rem 2rem;
-    margin: 1rem 1.5rem;
+    margin: 1rem 0;
     border-radius: 10px;
     white-space: nowrap;
     text-align: center;
@@ -207,6 +207,10 @@ h3{
     flex-direction: column;
 }
 
+.dl-brochure-desk{
+    display: none;
+}
+
 .home-phone img{
     width: 75%;
     margin-bottom: 5rem;
@@ -263,6 +267,14 @@ h3{
     .home-phone__detail{
         order: 1;
         margin-left: 2rem;
+    }
+
+    .dl-brochure-mobile{
+        display: none;
+    }
+
+    .dl-brochure-desk{
+        display: flex;
     }
 
     .home-phone img{
@@ -381,4 +393,94 @@ h3{
     }
     
 
+}
+
+/* Downlod Section */
+
+.download{
+    background-color: #F6F6F6;
+}
+
+.download__brochure , .download__app {
+  display: flex;
+  align-items: center;
+}
+
+.download__brochure img{
+    height: 200px;
+}
+
+.download__app img{
+    height: 225px;
+    width: 111px;
+    margin: 0 3rem;
+}
+
+.brochure__detail , .app__detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 375px;
+    padding-left: 2rem;
+    height: 168px;
+}
+
+.app__detail{
+    height: 334px;  
+}
+
+.brochure__detail h2 , .app__detail h2{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.brochure__detail p , .app__detail p{
+    color: #5B5B5B;
+    font-size: 1.4rem;
+}
+
+.btn__ligh , .btn__primary-color{
+    margin: 1.5rem 0;
+}
+
+.btn__primary-color span .btn__light span{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+@media screen and (min-width:768px) {
+    
+    .download__brochure img{
+        height: auto;
+    }
+    
+    .download__app img{
+        height: auto;
+        width: 235px;
+        margin: 9rem 10rem;
+    }
+    .brochure__detail , .app__detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 770px;
+    }
+
+    .app__detail{
+        margin-right: 6rem;
+    }
+
+    .brochure__detail h2 , .app__detail h2{
+        color: var(--color-primary);
+        font-size: 5.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .brochure__detail p , .app__detail p{
+        color: #5B5B5B;
+        font-size: 3.6rem;
+    }
 }
