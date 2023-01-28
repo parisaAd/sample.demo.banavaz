@@ -199,7 +199,7 @@ h3{
 }
 
 .bar:not(:last-child){
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .nav__menu-mobile{
@@ -255,6 +255,7 @@ h3{
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 6rem;
 }
 
 .dl-brochure-desk{
@@ -271,7 +272,7 @@ h3{
 .home-phone .phone-img{
     position: absolute;
     width: 120px;
-    top: 0.5%;
+    top: 5px;
     right: 12%;
 }
 
@@ -534,26 +535,28 @@ h3{
 }
 
 /* Capabilities Section */
+.Capabilities h2{
+    display: none;
+}
 
-.Capabilities{
+.capability__group{
     display: grid;
     grid-template-columns: repeat(2,fit-content(50%));
     gap: 2rem;
 }
 
-.capability img{
+.capability__group img{
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.capability p{
+.capability__group p{
     font-size: 1.3rem;
     line-height: 2.5rem;
     color: var(--color-text-gray);
     
 }
-
 
 .cooperation h3{
     font-size: 2rem;
@@ -574,7 +577,15 @@ h3{
 
 @media screen and (min-width:768px) {
 
-    .Capabilities{
+    .Capabilities h2{
+        display: block;
+        font-size: 6rem;
+        line-height: 8rem;
+        color: var(--color-primary);
+        padding: 5rem 0; 
+   }
+
+    .capability__group{
        
         grid-template-columns: repeat(4,1fr);
     }
@@ -604,7 +615,91 @@ h3{
     }
 
     .cooperation img{
-        width: 40%;
+        max-width: 420px;
         padding: 0;
     }
 }
+
+
+
+.main-footer{
+    background-color: var(--color-footer-mobile);
+}
+
+.footer__links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5rem;
+    border-bottom: 1px solid #fff;
+   padding: 6rem 3rem;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link .footer__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__link a{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer__badge{
+    width: 158px;
+    margin-bottom: 0;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-covers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon-cover a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    
+   
+}
+.icon-cover img{
+    width: 23px;
+    height: auto;
+    margin: 1rem;
+
+}
+
+.footer-social p{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .footer__links{
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+       }
+       
+}
+
+
+
