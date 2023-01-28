@@ -31,10 +31,12 @@ h2,
 h3{
     color: var(--color-text);
     font-weight: 700;
+    margin-bottom: 3rem;
 }
 
 .container{
      max-width: 1280px;
+     margin: 0 auto;
 }
 
 .block{
@@ -57,7 +59,7 @@ h3{
     outline: 0;
     border: 0;
     padding: 0.2rem 2rem;
-    margin: 1rem 1.5rem;
+    margin: 1rem 0;
     border-radius: 10px;
     white-space: nowrap;
     text-align: center;
@@ -90,6 +92,16 @@ h3{
     background-color: #fff;
     color: var(--color-primary);   
     border: 2px solid var(--color-primary);
+}
+
+.btn__home-phone{
+    background-color: #fff;
+    color: var(--color-main);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 /* Header Section */
@@ -187,7 +199,288 @@ h3{
 }   
 
 
-/* new section */
+/* Contetn Home-Phone */
 
 
+.home-phone{
+    display: flex;
+    flex-direction: column;
+}
 
+.dl-brochure-desk{
+    display: none;
+}
+
+.home-phone img{
+    width: 75%;
+    margin-bottom: 5rem;
+    align-self: center;
+    position: relative;
+}
+
+.home-phone .phone-righe{
+    position: absolute;
+    width: 120px;
+    top: 0.5%;
+    right: 12%;
+}
+
+.home-phone .phone-left{
+    display: none;
+}
+
+.home-phone__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home-phone__detail h1{
+    font-size: 3.2rem;
+}
+
+.home-phone__detail p{
+    font-size: 1.8rem;
+    
+    line-height: 3.7rem;
+}
+
+.btn__home-phone{
+    margin: 3rem 0;
+    width: 128px;
+    height: 44px;
+}
+
+.btn__home-phone .btn__name {
+    font-size: 1.8rem ;
+    line-height: 2.7rem;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .home-phone{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .home-phone__detail{
+        order: 1;
+        margin-left: 2rem;
+    }
+
+    .dl-brochure-mobile{
+        display: none;
+    }
+
+    .dl-brochure-desk{
+        display: flex;
+    }
+
+    .home-phone img{
+        order: 2;
+        width: 550px;
+        height: 583px;
+    }
+
+    .home-phone .phone-righe{
+        display: none;
+    }
+
+    .home-phone .phone-left{
+        display: block;
+        width: 230px ;
+        height: 480px;
+        position:absolute;
+        top:0.5%;
+        left: 8.8%;
+        z-index: 1;
+    }
+
+    .home-phone__detail h1{
+        font-size: 9rem;
+    }
+    
+    .home-phone__detail p{
+        width: 800px;
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+    }
+
+    .btn__home-phone{
+        margin: 10rem 0;
+        width: 276px;
+        height: 72px;
+    }
+
+    .btn__home-phone .btn__name {
+        font-size: 3.2rem ;
+        line-height: 4.8px;
+    }
+}
+
+/* Products Section */
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 6rem;
+}
+
+.product__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product__item img{
+    margin: 1rem 0;
+    width: 84px;
+    height: 84px;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .products{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+}
+
+/* Central Device */
+
+.central-device{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central-device img{
+    max-width: 320px;
+    margin-bottom: 3rem;
+}
+
+.central-device h2{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+
+.central-device p{
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .central-device img{
+        order: 2;
+        max-width: 760px;
+    }
+
+    .central-device h2{
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+    }
+    
+    .central-device p{
+        max-width: 850px;
+        font-size: 3.2rem;
+        line-height: 5.8rem;
+        margin: 3rem 0 6rem;
+    }
+    
+
+}
+
+/* Downlod Section */
+
+.download{
+    background-color: #F6F6F6;
+}
+
+.download__brochure , .download__app {
+  display: flex;
+  align-items: center;
+}
+
+.download__brochure img{
+    height: 200px;
+}
+
+.download__app img{
+    height: 225px;
+    width: 111px;
+    margin: 0 3rem;
+}
+
+.brochure__detail , .app__detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 375px;
+    padding-left: 2rem;
+    height: 168px;
+}
+
+.app__detail{
+    height: 334px;  
+}
+
+.brochure__detail h2 , .app__detail h2{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.brochure__detail p , .app__detail p{
+    color: #5B5B5B;
+    font-size: 1.4rem;
+}
+
+.btn__ligh , .btn__primary-color{
+    margin: 1.5rem 0;
+}
+
+.btn__primary-color span .btn__light span{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+@media screen and (min-width:768px) {
+    
+    .download__brochure img{
+        height: auto;
+    }
+    
+    .download__app img{
+        height: auto;
+        width: 235px;
+        margin: 9rem 10rem;
+    }
+    .brochure__detail , .app__detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 770px;
+    }
+
+    .app__detail{
+        margin-right: 6rem;
+    }
+
+    .brochure__detail h2 , .app__detail h2{
+        color: var(--color-primary);
+        font-size: 5.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .brochure__detail p , .app__detail p{
+        color: #5B5B5B;
+        font-size: 3.6rem;
+    }
+}
