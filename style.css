@@ -169,6 +169,13 @@ h3{
 
 .nav__item{
     margin-left: 6rem;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.nav__item:hover{
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .nav__btn{
@@ -279,7 +286,6 @@ h3{
 
 .home-phone__detail p{
     font-size: 1.8rem;
-    
     line-height: 3.7rem;
 }
 
@@ -361,7 +367,7 @@ h3{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-    margin-bottom: 6rem;
+    padding-top: 0 ;
 }
 
 .product__item{
@@ -380,6 +386,7 @@ h3{
 
     .products{
         grid-template-columns: repeat(6,1fr);
+        padding: 9rem 0;
     }
 
 }
@@ -414,7 +421,7 @@ h3{
     .central-device{
     margin-bottom: 6rem;
     }
-    
+
     .central-device img{
         order: 2;
         max-width: 760px;
