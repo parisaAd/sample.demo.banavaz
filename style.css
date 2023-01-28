@@ -244,6 +244,9 @@ h3{
 .home-phone{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .dl-brochure-desk{
@@ -257,15 +260,11 @@ h3{
     position: relative;
 }
 
-.home-phone .phone-righe{
+.home-phone .phone-img{
     position: absolute;
     width: 120px;
     top: 0.5%;
     right: 12%;
-}
-
-.home-phone .phone-left{
-    display: none;
 }
 
 .home-phone__detail{
@@ -322,17 +321,14 @@ h3{
         height: 583px;
     }
 
-    .home-phone .phone-righe{
-        display: none;
-    }
 
-    .home-phone .phone-left{
+    .home-phone .phone-img{
         display: block;
         width: 230px ;
         height: 480px;
         position:absolute;
         top:0.5%;
-        left: 8.8%;
+        right: 1060px;
         z-index: 1;
     }
 
@@ -394,6 +390,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .central-device img{
@@ -414,6 +411,10 @@ h3{
 
 @media screen and (min-width:768px) {
 
+    .central-device{
+    margin-bottom: 6rem;
+    }
+    
     .central-device img{
         order: 2;
         max-width: 760px;
