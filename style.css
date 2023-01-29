@@ -624,14 +624,14 @@ h3{
 
 .main-footer{
     background-color: var(--color-footer-mobile);
+    min-height: 200px;
 }
 
 .footer__links{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     row-gap: 5rem;
-    border-bottom: 1px solid #fff;
-   padding: 6rem 3rem;
+    padding: 6rem 3rem;
 }
 
 .footer__link{
@@ -660,6 +660,8 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgb(255, 255, 255,0.1);
+    
 }
 
 .icons-covers{
@@ -668,27 +670,28 @@ h3{
     align-items: center;
 }
 
-
 .icon-cover a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 3rem;
-    
-   
 }
+
+.icons-covers :not(:last-child){
+    margin-left: 3rem;
+}
+
 .icon-cover img{
-    width: 23px;
+    width: 24px;
     height: auto;
     margin: 1rem;
 
 }
 
 .footer-social p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-top: 2rem;
-}
+} 
 
 
 
@@ -698,6 +701,16 @@ h3{
         display: grid;
         grid-template-columns: repeat(4,1fr); 
        }
+
+    .footer-social{
+        flex-direction:row;
+        justify-content: space-between;
+        padding: 3rem 10rem;
+    }
+
+    .footer-social p {
+        margin-left: 11rem;
+    }
        
 }
 
